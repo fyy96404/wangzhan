@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/zhuce.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="tou">
+        <div class="logo">
+            <i class="iconfont icon-chibang"></i>
+        </div>
+        <div class="zi"><h5>畅想科技</h5></div>
+        <div class="zi1">欢迎注册</div>
+        <div class="denglu">
+            <span>已有账号？</span>
+            <a href="denglu.html">请登录</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="zhucekuai">
+    <div class="yonghuming">
+        <div class="zuo">用&nbsp&nbsp&nbsp户&nbsp&nbsp&nbsp名</div>
+        <input type="text" placeholder="您的账户名或者登录名" value="">
+    </div>
+
+    <div class="yonghuming">
+        <div class="zuo">设 置 密 码</div>
+        <input type="text" placeholder="建议至少使用两种字符组合" value="">
+    </div>
+
+    <div class="yonghuming">
+        <div class="zuo">确 认 密 码</div>
+        <input type="text" placeholder="请再次输入密码" value="">
+    </div>
+
+    <div class="yonghuming">
+        <div class="zuo">手&nbsp&nbsp&nbsp机&nbsp&nbsp&nbsp号</div>
+        <input type="text" placeholder="建议使用常用手机号" value="">
+    </div>
+
+    <div class="yzm">
+        <div class="zuo">验&nbsp&nbsp&nbsp证&nbsp&nbsp&nbsp码</div>
+        <input type="text" placeholder="请输入验证码" value="">
+        <div class="yanzhengma">3 5 7 8</div>
+    </div>
+
+    <div class="dianji">
+        <button>立即注册</button>
+    </div>
+</div>
+
+<div class="dibu">
+    <ul>
+        <li><a href="guanyu.html">关于我们</a></li>
+        <li><a href="chanping.html">产品展示</a></li>
+        <li><a href="boke.html">博客咨讯</a></li>
+        <li><a href="zhichi.html">支持畅想</a></li>
+    </ul>
+</div>
+<div class="zuihou">Copyright © 2004-2017  畅想Cx.com 版权所有</div>
+
+
+<script>
+$(function () {
+    let yanzhengma=$('.yanzhengma');
+    yanzhengma.on('click',function () {
+        yanzhengma.text('');
+        for(let i=0;i<4;i++){
+            let m=Math.floor(Math.random()*10);
+            yanzhengma.append(` ${m}`);
+        }
+    })
+
+})
+</script>
+</body>
+</html>
